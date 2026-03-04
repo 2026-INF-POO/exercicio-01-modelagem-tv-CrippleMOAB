@@ -4,13 +4,13 @@ class Tv{
   String marca;
   int voltagem;
   int canal=1;
-  int ligar(int voltagem, int polegadas){
+  int ligar(){
     return voltagem*polegadas;
   }
   void desligar(){
     System.out.println("Desligando...");
   }
-  int aumentarVolume(int volume){
+  int aumentarVolume(){
     if(volume==10){
       System.out.println("Volume máximo atingido!");
     }
@@ -20,7 +20,7 @@ class Tv{
     }
     return volume;
   }
-  int diminuirVolume(int volume){
+  int diminuirVolume(){
     if(volume==1){
       System.out.println("Volume mínimo atingido!");
     }
@@ -30,12 +30,12 @@ class Tv{
     }
     return volume;
   }
-  int subirCanal(int canal){
+  int subirCanal(){
     canal++;
     System.out.println("Canal: "+canal);
     return canal;
   }
-  int descerCanal(int canal){
+  int descerCanal(){
     if(canal>1){
       canal--;
       System.out.println("Canal: "+canal);
