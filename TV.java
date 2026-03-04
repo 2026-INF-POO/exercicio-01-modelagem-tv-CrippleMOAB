@@ -4,7 +4,7 @@ class Tv{
   String marca;
   int voltagem;
   int canal=1;
-  int ligar(){
+  double ligar(){
     return voltagem*polegadas;
   }
   void desligar(){
